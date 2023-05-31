@@ -1,0 +1,31 @@
+CREATE TABLE MOVIES
+(
+  id 1,
+  name Luca,
+  year 2021,
+  min 1 h 35 m
+ );
+ (
+   id 2,
+   name Transformers:El lado oscuro de la Luna,
+   year 2011,
+   min 2 h 34 m
+ );
+ (
+   id 3,
+   name Capitana Marvel,
+   year 2019,
+   min 2 h 4 m
+ );
+ (
+   id 4,
+   name Aquaman,
+   year 2019,
+   min 2 h 23 m
+ );
+ (
+   id 5,
+   name Titanic,
+   year 1997,
+   min 3 h 14 m
+ )

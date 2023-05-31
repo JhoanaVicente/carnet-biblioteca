@@ -1,7 +1,7 @@
 <script>
     function showInformation(fullUserName) {
-        var nom = "";
-        var cognoms = "";
+        var nom = " ";
+        var cognoms = " ";
         fullUserName = fullUserName.trim();
         var words = fullUserName.split(" ");
         nom = words [0];
@@ -20,11 +20,12 @@
     var result = showInformation(fullUserName);
 
     console.log("nom: " + result.nom);
-    console.log("cognoms: " + result.cognoms);
+    console.log("cognoms: " + result.cognoms)
 </script>
+
 <div>
-    <p>Nom: </p>
-    <p>Cognoms: </p>
+    <p>Nom: Pepa</p>
+    <p>Cognoms: Fuentes Martínez</p>
 </div>
 
 <div>
