@@ -1,46 +1,45 @@
 <script>
-    function showInformation(fullUserName) {
-        var nom = " ";
-        var cognoms = " ";
-        fullUserName = fullUserName.trim();
-        var words = fullUserName.split(" ");
-        nom = words [0];
-
-        if(words.length > 1) {
-            cognoms = words.slice(1).join(" ");
-        }
-
-        return {
-            nom: nom,
-            cognoms: cognoms
-        };
-    }
-
-    var fullUserName = "Pepa Fuentes Martínez";
-    var result = showInformation(fullUserName);
-
-    console.log("nom: " + result.nom);
-    console.log("cognoms: " + result.cognoms)
+   export let userFullName = "Pepa Fuentes Martínez";
+   export let nombreCompleto ="Jean Pierre Gallardo Odar";
+   export let name = "Loli"
 </script>
 
-<div>
-    <p>Nom: Pepa</p>
-    <p>Cognoms: Fuentes Martínez</p>
-</div>
+<h1>Carnet de Biblioteca "Daddy Google"</h1>
 
-<div>
-    <p>Nom: </p>
-    <p>Cognoms: </p>
-</div>
-
+<main>
+    <!--Aquí se usa el ejemplo del ejercicio-->
+    <div>
+        <p>Nom: {userFullName.split(" ")[0]}</p>
+        <p>Cognoms: {userFullName.split(" ").slice(1).join(" ")}</p>
+    </div>
+    <!--Aquí he usado un ejemplo con dos nombres y dos apellidos-->
+    <div>
+        <p>Nom: {nombreCompleto.split(" ").slice(0,2).join(" ")}</p>
+        <p>Cognoms: {nombreCompleto.split(" ").slice(2).join(" ")}</p>
+    </div>
+    <!--Aquí he utilizado solo el nombre-->
+    <div>
+        <p>Nom: {name.split(" ")[0]}</p>
+        <p>Cognoms: {name.split(" ").slice(1).join(" ")}</p>
+    </div>
+</main>
 
 <style>
-    div {
-        margin: 45px;
-        padding:45px;
-        border: 2px solid gold;
+    h1 {
+        margin-left: 150px;
+    }
+
+    main {
+        padding:5px;
         text-align: center;
         margin-left: 225px;
         display: table;
+    }
+
+    div {
+        margin: 18px;
+        padding: 20px;
+        border: 2px solid gold;
+
     }
 </style>
