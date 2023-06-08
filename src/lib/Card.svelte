@@ -1,7 +1,7 @@
 <script>
    export let userFullName = "Pepa Fuentes Martínez";
    export let nombreCompleto ="Jean Pierre Gallardo Odar";
-   export let name = "Loli"
+   export let singleName = "Loli"
 </script>
 
 <h1>Carnet de Biblioteca "Daddy Google"</h1>
@@ -19,8 +19,8 @@
     </div>
     <!--Aquí he utilizado solo el nombre-->
     <div>
-        <p>Nom: {name.split(" ")[0]}</p>
-        <p>Cognoms: {name.split(" ").slice(1).join(" ")}</p>
+        <p>Nom: {singleName.split(" ")[0]}</p>
+        <p>Cognoms: {singleName.split(" ").slice(1).join(" ")}</p>
     </div>
 </main>
 
